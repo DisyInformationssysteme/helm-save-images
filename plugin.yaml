@@ -1,7 +1,7 @@
 name: "save-images"
 usage: "helm save-images -f <values.yaml> <chart>"
 description: "Run save-images on Helm charts to download and save all docker images to your local filesystem."
-command: "$HELM_PLUGIN_DIR/bin/save-images"
+command: "$HELM_PLUGIN_DIR/bin/helm-save-images"
 hooks:
   install: "$HELM_PLUGIN_DIR/install-binary.sh"
   update: "$HELM_PLUGIN_DIR/install-binary.sh"
