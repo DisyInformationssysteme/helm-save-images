@@ -56,8 +56,8 @@ initOS() {
 # binary builds.
 verifySupported() {
   supported="Darwin_arm64\nDarwin_x86_64\nLinux_arm64\nLinux_i386\nLinux_x86_64\nWindows_arm64\nWindows_i386\nWindows_x86_64\n"
-  if ! echo "${supported}" | grep -q "${OS}-${ARCH}"; then
-    echo "No prebuild binary for ${OS}-${ARCH}."
+  if ! echo "${supported}" | grep -q "${OS}_${ARCH}"; then
+    echo "No prebuild binary for ${OS}_${ARCH}."
     exit 1
   fi
 
