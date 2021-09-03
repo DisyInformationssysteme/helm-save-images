@@ -101,7 +101,7 @@ installFile() {
   HELM_TMP="/tmp/$PROJECT_NAME"
   mkdir -p "$HELM_TMP"
   tar xf "$PLUGIN_TMP_FILE" -C "$HELM_TMP"
-  HELM_TMP_BIN="$HELM_TMP/save-images/bin/save-images"
+  HELM_TMP_BIN="$HELM_TMP/helm-save-images"
   echo "Preparing to install into ${HELM_PLUGIN_DIR}"
   mkdir -p "$HELM_PLUGIN_DIR/bin"
   cp "$HELM_TMP_BIN" "$HELM_PLUGIN_DIR/bin"
