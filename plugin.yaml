@@ -1,0 +1,4 @@
+name: "save-images"
+usage: "helm save-images -f <values.yaml> <chart>"
+description: "Run save-images on Helm charts to download and save all docker images to your local filesystem."
+command: "echo The plugin is located in: \"$HELM_PLUGIN_DIR\" and its name is: \"$HELM_PLUGIN_NAME\""
