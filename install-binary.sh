@@ -121,7 +121,7 @@ fail_trap() {
 testVersion() {
   set +e
   echo "$PROJECT_NAME installed into $HELM_PLUGIN_DIR/$PROJECT_NAME"
-  "${HELM_PLUGIN_DIR}/helm-save-images" -h
+  "${HELM_PLUGIN_DIR}/bin/helm-save-images" -h
   set -e
 }
 
