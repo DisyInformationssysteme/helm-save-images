@@ -49,6 +49,8 @@ initOS() {
   # Minimalist GNU for Windows
   mingw*) OS='Windows' ;;
   darwin) OS='Darwin' ;;
+  # Linux
+  linux) OS='Linux';;
   esac
 }
 
